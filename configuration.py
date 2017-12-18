@@ -10,6 +10,7 @@ with open(config_path, 'r') as ymlfile:
 
 
 def get_config(parameter_name):
+    print(parameter_name)
     if 'DYNO' in os.environ:
         is_heroku = True
     else:
