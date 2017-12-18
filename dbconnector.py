@@ -4,8 +4,9 @@ from configuration import get_db_creds
 
 env = get_db_creds('env')
 test_uri = get_db_creds('test_uri')
+print(test_uri)
 prod_uri = get_db_creds('prod_uri')
-
+print(prod_uri)
 
 if uname()[1] == 'DietPi':
     client = MongoClient(prod_uri)
