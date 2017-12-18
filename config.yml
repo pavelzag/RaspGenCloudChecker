@@ -1,0 +1,14 @@
+creds:
+    email: yardeni.generator.dev@gmail.com
+    user: yardeni.generator.dev
+    password: U2AchtungBaby
+    sleep_time: 5
+    owner: zagalsky@gmail.com
+white_list:
+    zagalsky@gmail.com, yardeni.generator.dev@gmail.com, yordeni@gmail.com
+pin:
+    3
+mongodb:
+    test_uri: 'mongodb://root:qum5net@ds161518.mlab.com:61518/raspgen_test'
+    prod_uri: 'mongodb://root:qum5net@ds147497.mlab.com:47497/raspgen'
+    env: 'test'
