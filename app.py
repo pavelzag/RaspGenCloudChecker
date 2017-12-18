@@ -18,6 +18,8 @@ def check_time_delta(keep_alive_ts):
     return datetime.strptime(s2, time_format) - datetime.strptime(keep_alive_ts, time_format)
 
 if __name__ == '__main__':
+    msg = 'app is going up'
+    logging_handler(msg)
     send_mail(send_to=owner, subject='Start up Message', text='Cloud checker app is going up')
     while 1 == 1:
         keep_alive_ts = get_keep_alive()['time_stamp']
