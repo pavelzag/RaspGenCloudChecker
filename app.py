@@ -10,6 +10,9 @@ sleep_time = 10
 fail_sleep_time = 300
 keep_alive_threshold = 2
 owner = get_config('owner')
+mail_address = get_config('email')
+mail_user = get_config('user')
+mail_password = get_config('password')
 
 
 def check_time_delta(keep_alive_ts):
@@ -19,6 +22,7 @@ def check_time_delta(keep_alive_ts):
 
 if __name__ == '__main__':
     msg = 'app is going up'
+    print(mail_address, mail_user, mail_password)
     logging_handler(msg)
     send_mail(send_to=owner, subject='Start up Message', text='Cloud checker app is going up')
     while 1 == 1:
