@@ -33,5 +33,6 @@ def send_mail(send_from = 'zagalsky@gmail.com', send_to='', subject='hi', text='
     sender_password = get_config('password')
     print(sender_password)
     smtp.login(sender_email, sender_password)
-    smtp.sendmail(send_from, send_to, msg.as_string())
+    r = smtp.sendmail(send_from, send_to, msg.as_string())
+    print(r)
     smtp.close()
