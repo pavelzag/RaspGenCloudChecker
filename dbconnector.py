@@ -22,6 +22,8 @@ def set_keep_alive(time_stamp):
 
 
 def get_keep_alive():
+    print(test_uri)
+    print(prod_uri)
     cursor = db.generator_keep_alive.find({})
     for document in cursor:
         return document
